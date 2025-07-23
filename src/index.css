@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Belloso Cafe Design System - Elegant & Sophisticated */
+@layer base {
+  :root {
+    /* Core Brand Colors */
+    --cafe-primary: 158 64% 17%; /* Deep forest green from logo */
+    --cafe-primary-light: 158 45% 25%;
+    --cafe-secondary: 35 25% 92%; /* Warm cream */
+    --cafe-accent: 25 35% 85%; /* Warm beige */
+    --cafe-gold: 45 85% 65%; /* Elegant gold accent */
+    
+    /* Backgrounds */
+    --background: 35 25% 98%; /* Soft warm white */
+    --foreground: 158 64% 12%; /* Dark green text */
+    --surface: 35 15% 96%; /* Light surface */
+    --surface-alt: 158 20% 95%; /* Subtle green tint */
+
+    /* Interactive Elements */
+    --primary: 158 64% 17%;
+    --primary-foreground: 35 25% 98%;
+    --primary-hover: 158 64% 20%;
+    
+    --secondary: 35 25% 92%;
+    --secondary-foreground: 158 64% 17%;
+    --secondary-hover: 35 25% 88%;
+
+    --accent: 25 35% 85%;
+    --accent-foreground: 158 64% 17%;
+    
+    /* Neutral Tones */
+    --muted: 35 15% 90%;
+    --muted-foreground: 158 25% 45%;
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 158 64% 17%;
+
+    /* Semantic Colors */
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
+    --success: 142 76% 36%;
+    --warning: 38 92% 50%;
+
+    /* Card & Popover */
+    --card: 35 25% 98%;
+    --card-foreground: 158 64% 12%;
+    --popover: 35 25% 98%;
+    --popover-foreground: 158 64% 12%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--cafe-primary)) 0%, hsl(var(--cafe-primary-light)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--background)) 0%, hsl(var(--surface)) 100%);
+    --gradient-accent: linear-gradient(120deg, hsl(var(--cafe-gold)) 0%, hsl(var(--cafe-accent)) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 2px 8px hsl(var(--cafe-primary) / 0.06);
+    --shadow-medium: 0 4px 16px hsl(var(--cafe-primary) / 0.08);
+    --shadow-large: 0 8px 32px hsl(var(--cafe-primary) / 0.1);
+    --shadow-glow: 0 0 24px hsl(var(--cafe-gold) / 0.15);
+
+    /* Typography */
+    --font-script: 'Dancing Script', cursive;
+    --font-body: 'Inter', sans-serif;
+
+    /* Spacing & Sizing */
+    --radius: 0.75rem;
+    --container-max: 1200px;
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode for Belloso Cafe - Maintain elegance */
+    --background: 158 64% 8%;
+    --foreground: 35 25% 95%;
+    --surface: 158 45% 12%;
+    --surface-alt: 158 35% 15%;
+    
+    --card: 158 45% 12%;
+    --card-foreground: 35 25% 95%;
+    --popover: 158 45% 12%;
+    --popover-foreground: 35 25% 95%;
+
+    --primary: 158 45% 75%;
+    --primary-foreground: 158 64% 8%;
+    --primary-hover: 158 45% 80%;
+
+    --secondary: 158 25% 20%;
+    --secondary-foreground: 35 25% 95%;
+    --secondary-hover: 158 25% 25%;
+
+    --muted: 158 25% 20%;
+    --muted-foreground: 158 15% 65%;
+    --border: 158 25% 25%;
+    --input: 158 25% 25%;
+    --ring: 158 45% 75%;
+
+    --cafe-gold: 45 85% 75%;
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--surface)) 100%);
+    --shadow-soft: 0 2px 8px hsl(0 0% 0% / 0.3);
+    --shadow-medium: 0 4px 16px hsl(0 0% 0% / 0.4);
+    --shadow-large: 0 8px 32px hsl(0 0% 0% / 0.5);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-foreground;
+  }
+
+  .script-font {
+    font-family: var(--font-script);
+  }
+
+  .body-font {
+    font-family: var(--font-body);
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-padding {
+    @apply py-16 lg:py-24;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-medium hover:-translate-y-1;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary-hover;
+    @apply px-8 py-3 rounded-lg font-medium;
+    @apply transition-all duration-300 shadow-soft hover:shadow-medium;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary-hover;
+    @apply px-8 py-3 rounded-lg font-medium border border-border;
+    @apply transition-all duration-300 shadow-soft hover:shadow-medium;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-cafe-gold to-cafe-accent bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+  
+  .shadow-large {
+    box-shadow: var(--shadow-large);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .bg-gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  .bg-gradient-accent {
+    background: var(--gradient-accent);
+  }
+}
