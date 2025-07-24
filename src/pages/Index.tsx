@@ -46,12 +46,12 @@ const Index = () => {
               className="h-32 w-auto mx-auto mb-8"
             /> */}
 
-            
-
-           {/* <BellosoLogo className="h-32 w-auto mx-auto mb-8 text-white" /> */}
 
 
-            
+            {/* <BellosoLogo className="h-32 w-auto mx-auto mb-8 text-white" /> */}
+
+
+
             <h1 className="text-white text-5xl md:text-7xl font-script mb-6 animate-in slide-in-from-bottom duration-1000">
               Welcome to Belloso
             </h1>
@@ -260,9 +260,10 @@ const Index = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Our Location</h3>
                     <p className="text-muted-foreground">
-                      123 Coffee Street<br />
-                      Downtown District<br />
-                      New York, NY 10001
+                      Belloso Cafe<br />
+                      Uppal Bhagayat<br />
+                      Hyderabad, Telangana, 500039<br />
+                      india
                     </p>
                   </div>
                 </div>
@@ -308,8 +309,7 @@ const Index = () => {
               {/* Map placeholder */}
               <div className="relative h-96 bg-muted rounded-lg overflow-hidden shadow-large">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.0362176316!2d-74.30932858652306!3d40.69753995830908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1635180000000!5m2!1sen!2sus"
-                  width="100%"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.256346199083!2d78.5611643153845!3d17.39069229804245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDIzJzI2LjUiTiA3OMKwMzMnNDkuNSJF!5e0!3m2!1sen!2sin!4v1719391234567!5m2!1sen!2sin" width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
