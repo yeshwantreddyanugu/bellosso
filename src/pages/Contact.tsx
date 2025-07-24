@@ -89,7 +89,7 @@ const Contact = () => {
                       <Input
                         id="phone"
                         type="tel"
-                        placeholder="(555) 123-4567"
+                        placeholder="9876543210"
                         className="w-full"
                       />
                     </div>
@@ -146,10 +146,10 @@ const Contact = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground">
-                      123 Coffee Street<br />
-                      Downtown District<br />
-                      New York, NY 10001<br />
-                      United States
+                      Belloso Cafe<br />
+                      Uppal Bhagayat<br />
+                      Hyderabad, Telangana, 500039<br />
+                      india
                     </p>
                   </CardContent>
                 </Card>
@@ -165,7 +165,7 @@ const Contact = () => {
                   <CardContent>
                     <p className="text-muted-foreground">
                       <a href="tel:+15551234567" className="hover:text-cafe-primary transition-colors">
-                        (555) 123-4567
+                        7995532779
                       </a>
                     </p>
                     <p className="text-sm text-muted-foreground mt-1">
@@ -185,7 +185,7 @@ const Contact = () => {
                   <CardContent>
                     <p className="text-muted-foreground">
                       <a href="mailto:hello@belloso.cafe" className="hover:text-cafe-primary transition-colors">
-                        hello@belloso.cafe
+                        yeshwantreddyanugu@gmail.com
                       </a>
                     </p>
                     <p className="text-sm text-muted-foreground mt-1">
@@ -243,15 +243,14 @@ const Contact = () => {
               <div className="text-center">
                 <MapPin className="h-12 w-12 text-cafe-primary mx-auto mb-4" />
                 <p className="text-muted-foreground">
-                  Interactive map would be integrated here<br />
-                  123 Coffee Street, Downtown District, NY 10001
+                  
+                  Belloso, Uppal, Hyderabad
                 </p>
               </div>
             </div>
             {/* This would be replaced with actual map integration */}
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.0362176316!2d-74.30932858652306!3d40.69753995830908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1635180000000!5m2!1sen!2sus"
-              width="100%"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.256346199083!2d78.5611643153845!3d17.39069229804245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDIzJzI2LjUiTiA3OMKwMzMnNDkuNSJF!5e0!3m2!1sen!2sin!4v1719391234567!5m2!1sen!2sin" width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen

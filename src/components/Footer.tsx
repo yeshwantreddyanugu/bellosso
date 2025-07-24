@@ -87,18 +87,19 @@ const Footer = () => {
               <li className="flex items-start space-x-2">
                 <MapPin className="h-5 w-5 mt-0.5 text-primary-foreground/60" />
                 <span className="text-primary-foreground/80">
-                  123 Coffee Street<br />
-                  Downtown District<br />
-                  New York, NY 10001
+                  Belloso cafe<br />
+                  Uppal Bhagayat<br />
+                  Hyderabad, Telangana, <br />
+                  India, 500039
                 </span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="h-5 w-5 text-primary-foreground/60" />
-                <span className="text-primary-foreground/80">(555) 123-4567</span>
+                <span className="text-primary-foreground/80">+91 7995532779</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-5 w-5 text-primary-foreground/60" />
-                <span className="text-primary-foreground/80">hello@belloso.cafe</span>
+                <span className="text-primary-foreground/80">yeshwantreddyanugu@gmail.com</span>
               </li>
             </ul>
           </div>

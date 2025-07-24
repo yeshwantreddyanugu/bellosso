@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { ArrowRight, Coffee, Heart, Star, MapPin, Instagram, Facebook, Twitter } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-// import { ReactComponent as BellosoLogo } from '@/assets/BellosoLogo.svg';
+import BellosoLogo from '@/assets/BellosoLogo.svg?react';
 
 
 const Index = () => {
@@ -40,11 +40,17 @@ const Index = () => {
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative z-10 container-custom text-center text-primary-foreground">
           <div className="max-w-4xl mx-auto">
-            <img
+            {/* <img
               src="/Belloso_image.jpg"
               alt="Belloso Cafe"
               className="h-32 w-auto mx-auto mb-8"
-            />
+            /> */}
+
+            
+
+           {/* <BellosoLogo className="h-32 w-auto mx-auto mb-8 text-white" /> */}
+
+
             
             <h1 className="text-white text-5xl md:text-7xl font-script mb-6 animate-in slide-in-from-bottom duration-1000">
               Welcome to Belloso
